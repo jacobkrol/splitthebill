@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split the Bill</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js-main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <div class="menubutton">
+                <div style="max-width: 400px">
+                    <a id="home" href="#">HOME</a>
+                </div>
+            </div>
+        </div>
+        <div id="title">
+            <h1>Split the Bill</h1>
+        </div>
+    </header>
+    <div id="people" class="page" style="display: none">
+        <div class="progress">
+            <h3>Step 1 of 3</h3>
+        </div>
+        <form>
+            <fieldset>
+                <legend>People:</legend>
+                <div id="person-data">
+                    <input id="person1" name="person1" type="text" placeholder="Name" class="person" />
+                    <input type="button" id="rpeople1" class="remove" value="x" />
+                </div>
+                <input type="button" class="add" value="Add" />
+                <input type="button" class="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </div>
+    <div id="order" class="page" style="display: none">
+        <div class="progress">
+            <h3>Step 2 of 3</h3>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Order:</legend>
+                <div id="item-data">
+                    <div id="item1">
+                        <input name="item1" type="text" placeholder="Cost" class="item" />
+                        <select id="item1select">
+                            <option value="personex1">John Doe</option>
+                            <option value="personex2">Jane Doe</option>
+                        </select>
+                        <input type="button" id="ritem1" class="remove" value="x" />
+                    </div>
+                </div>
+                <br>
+                <input type="button" class="back" value="Back" />
+                <input type="button" class="add" value="Add" />
+                <input type="button" class="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </div>
+    <div id="total" class="page" style="display: none">
+        <div class="progress">
+            <h3>Step 3 of 3</h3>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Total:</legend>
+                <p><strong>Subtotal: </strong><span id="subtotal-data">...</span></p>
+                <input name="total" type="text" placeholder="Total Cost" class="item" />
+                <br>
+                <input type="button" class="back" value="Back" />
+                <input type="button" class="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </div>
+    <div id="result" class="page" style="display: none">
+        <div class="progress">
+            <h3>Completed</h3>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Results:</legend>
+                <div id="result-data">
+                    <p>John Doe: ...</p>
+                    <p>Jane Doe: ...</p>
+                </div>
+                <br>
+                <input type="button" class="back" value="Back" />
+                <input type="button" class="restart" value="Restart" />
+            </fieldset>
+        </form>
+    </div>
+    <div id="error" class="page" style="display: none">
+        <h3>An unexpected error occurred</h3>
+        <p>Contact <u>jacobskrol@gmail.com</u> to alert of the issue.</p>
+    </div>
+</body>
+
+</html>

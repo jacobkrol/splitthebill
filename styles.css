@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+
+body {
+    margin: 0;
+    background: #AAE;
+    font-family: 'ZCOOL XiaoWei', Trebuchet MS, Arial, sans-serif;
+}
+
+#menu {
+    background: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menubutton {
+    height: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--medium);
+    padding: 10px;
+    display: inline-block;
+}
+
+h1 {
+    padding: 10px;
+    line-height: 1;
+    font-size: var(--large);
+}
+
+p {
+    font-size: var(--small);
+    margin: 10px 5px 5px 2px;
+}
+
+#title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.add {
+    border-radius: 5px;
+    border: 2px solid white;
+    border-color: #8C8 #6A6 #6A6 #8C8;
+    background: #4A4;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px 10px 10px 0;
+    padding: 5px 10px;
+}
+
+.remove {
+    border-radius: 50%;
+    border: 2px solid white;
+    border-color: #C88 #A66 #A66 #C88;
+    background: #A44;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.submit {
+    border-radius: 5px;
+    border: 2px solid white;
+    border-color: #88C #66A #66A #88C;
+    background: #44A;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px 10px 10px 0;
+    padding: 5px 10px;
+}
+
+.back {
+    border-radius: 5px;
+    border: 2px solid white;
+    border-color: #C8C #A6A #A6A #C8C;
+    background: #A4A;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px 10px 10px 0;
+    padding: 5px 10px;
+}
+
+.restart {
+    border-radius: 5px;
+    border: 2px solid white;
+    border-color: #777 #555 #555 #777;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px 10px 10px 0;
+    padding: 5px 10px;
+}
+
+.progress, #error h3, #error p {
+    margin-left: 15px;
+}
+
+input[type="text"] {
+    margin: 5px 0;
+    padding: 2px;
+    border-radius: 2px;
+    font-size: var(--small);
+}
+
+input[type="button"] {
+    font-size: var(--small);
+}
+
+input[type="button"]:focus {
+    outline: none;
+}
+
+select {
+    padding: 2px;
+}
+
+#subtotal-data, .result {
+    font-family: sans-serif;
+}
+
+.fill {
+    width: 100%;
+}
+
+#result p {
+    margin-bottom: 0px;
+}
